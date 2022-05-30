@@ -1,1 +1,1 @@
-# goit-phython
+# goit-python
