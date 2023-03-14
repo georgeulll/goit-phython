@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "module7"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+black = "^23.1.0"
+sqlalchemy = "^2.0.4"
+faker = "^17.0.0"
+psycopg2 = "^2.9.5"
+alembic = "^1.9.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
