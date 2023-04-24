@@ -1,0 +1,24 @@
+{% extends "app_quotes/base.html" %}
+
+{% block content %}
+<h1>Upload quotes</h1>
+<form action="{% url 'app_quotes:upload_quotes' %}" method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label class="form-label">Quotes</label>
+        {{form.quote_text}}
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Author</label>
+        {{form.author}}
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Tags</label>
+        {{form.tags}}
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
