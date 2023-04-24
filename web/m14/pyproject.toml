@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "module14"
+version = "0.1.0"
+description = ""
+authors = ["georgeulll"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlalchemy = "2.0.7"
+fastapi = "0.95.0"
+uvicorn = {extras = ["standart"], version = "^0.21.1"}
+pydantic = {extras = ["dotenv"], version = "^1.10.7"}
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.6"
+alembic = "1.10.2"
+fastapi-mail = "^1.2.7"
+redis = "^4.5.4"
+python-dotenv = "^1.0.0"
+fastapi-limiter = "^0.1.5"
+asyncio = "^3.4.3"
+cloudinary = "^1.32.0"
+psycopg2 = "2.9.5"
+
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^6.1.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
