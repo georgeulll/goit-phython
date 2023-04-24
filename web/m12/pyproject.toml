@@ -2,7 +2,7 @@
 name = "module12"
 version = "0.1.0"
 description = ""
-authors = ["NickGoit <113237474+NickGoit@users.noreply.github.com>"]
+authors = ["georgeulll"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
