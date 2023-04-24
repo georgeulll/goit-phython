@@ -1,0 +1,13 @@
+{% extends "app_quotes/base.html" %}
+
+{% block content %}
+<h1>Add Tag</h1>
+<form action="{% url 'app_quotes:add_tags' %}" method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label class="form-label">Tag name</label>
+        {{form.name}}
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
